@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GlitchMyNeuron - The System is Watching</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- CRT Screen Overlay -->
+  <div class="crt-overlay"></div>
+
+  <!-- Custom Cursor -->
+  <div class="glitch-cursor" id="cursor"></div>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="container nav-content">
+      <a href="#" class="logo" style="text-decoration: none; display: flex; align-items: center; gap: 0.5rem; letter-spacing: 1px;">
+        <i class="fa-solid fa-brain" style="color: var(--glitch-blue);"></i> GLITCHED<span style="color: var(--text-muted); font-weight: 400;">_CORE</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#book">Initialize</a></li>
+        <li><a href="#categories">Sectors</a></li>
+        <li><a href="#about">Log</a></li>
+      </ul>
+      <div class="actions">
+        <button id="theme-toggle" class="sys-btn" aria-label="Toggle Theme"><i class="fa-solid fa-bolt"></i></button>
+        <button class="sys-btn" id="cart-btn">CART [<span id="cart-count">0</span>]</button>
+        <button class="sys-btn" id="open-signin">LOGIN</button>
+        <button class="hamburger"><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main-wrapper">
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="glitch target-glitch" data-text="GlitchMyNeuron">GlitchMyNeuron</h1>
+      <p class="target-glitch">Fade the black, no turning back.</p>
+      <button class="cta glitch" data-text="ENTER THE SYSTEM" onclick="document.getElementById('book').scrollIntoView();">ENTER THE SYSTEM</button>
+    </div>
+  </section>
+
+  <!-- Featured Book -->
+  <section class="featured" id="book">
+    <div class="container" id="scroll-distort-target">
+      <div class="book-container sys-card">
+        <!-- REPLACE WITH YOUR EBOOK COVER -->
+        <img src="assets/images/E-Book Cover.jpeg" alt="GlitchMyNeuron Cover" class="book-cover">
+        
+        <div class="book-info">
+          <div class="sys-badge target-glitch" style="display:inline-block; border: 1px solid var(--glitch-red); color: var(--glitch-red); padding: 0.3rem 0.8rem; font-family: 'Space Mono', monospace; font-size: 0.85rem; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 1px;">WARNING: INAUGURAL UPLOAD // DEBUT BOOK</div>
+          <h2 class="target-glitch">GlitchMyNeuron</h2>
+          <h3>By Abhishek Kumar Dutta</h3>
+          <!-- EDIT DESCRIPTION HERE -->
+          <p class="target-glitch">
+            This is not just a book. It is a psychological override. Dive into the fragmented realities of human consciousness merged with corrupt machine code. As you turn the pages, the boundaries between your mind and the network will blur. Are you reading it, or is it reading you?
+          </p>
+          <!-- EDIT PRICE HERE -->
+          <!-- Modern E-commerce Pricing Block -->
+          <div class="pricing-block" style="margin-bottom: 2rem;">
+            <div style="font-family: 'Space Mono', monospace; display: flex; justify-content: center; align-items: center;">
+              <span class="price" style="margin-bottom: 0; font-size: 3rem;">$1.00</span>
+            </div>
+            <div style="color: var(--glitch-red); font-family: 'Space Mono', monospace; font-size: 0.85rem; margin-top: 0.5rem; text-transform: uppercase;">
+              <i class="fa-solid fa-tag"></i> Early Access: First 15 Downloads Only
+            </div>
+          </div>
+          
+          <div class="action-grp" style="display: flex; gap: 1rem; justify-content: center;">
+            <button class="sys-btn add-to-cart" style="padding: 0.8rem 1.5rem; font-weight: bold; border-radius: 8px; font-family: inherit; display: flex; align-items: center; gap: 0.5rem;">
+              <i class="fa-solid fa-cart-plus"></i> Add to Cart
+            </button>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=abhishekdutta.contact@gmail.com&su=Purchase%20Request:%20GlitchMyNeuron&body=I%20want%20to%20purchase%20your%20debut%20book,%20GlitchMyNeuron." target="_blank" class="sys-btn" style="background: var(--text-main); color: var(--bg-color); padding: 0.8rem 1.5rem; font-weight: bold; border-radius: 8px; text-decoration: none; display: flex; align-items: center; gap: 0.5rem;">
+              <i class="fa-solid fa-bolt"></i> Buy Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section class="categories" id="categories">
+    <div class="container">
+      <h2 class="sys-title target-glitch" style="margin-bottom:2rem;">Data Sectors</h2>
+      <div class="cat-grid">
+        <div class="cat-card">Psychological</div>
+        <div class="cat-card">Mind-Bending</div>
+        <div class="cat-card">Dark Fiction</div>
+        <div class="cat-card">Sci-Fi</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="sys-card" style="max-width: 900px; margin: 0 auto;">
+        <p class="target-glitch">
+          "<strong>This is my very first transmission into the system...</strong> My debut book is not just ink on pages. It is a virus mapping itself onto your neural pathways. Every chapter you digest slightly alters the parameters of your reality. Do not proceed if you wish to remain asleep."
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="sys-card" style="max-width: 700px; margin: 0 auto; text-align: center;">
+        <h2 class="sys-title glitch" data-text="TERMINAL INPUT">TERMINAL INPUT</h2>
+        <form class="form-sys" id="contactForm" novalidate>
+          <div class="form-group">
+            <label>USER_NAME</label>
+            <input type="text" id="contact-name" required>
+          </div>
+          <div class="form-group">
+            <label>USER_EMAIL</label>
+            <input type="email" id="contact-email" required>
+            <span class="err-msg" id="email-err">INVALID_FORMAT_DETECTED</span>
+          </div>
+          <div class="form-group">
+            <label>TRANSMISSION</label>
+            <textarea id="contact-message" rows="4" required></textarea>
+            <span class="err-msg" id="msg-err">EMPTY_PAYLOAD_REJECTED</span>
+          </div>
+          <button type="submit" class="sys-btn" style="width:100%; border-color:var(--text-main);">TRANSMIT</button>
+          <div id="form-feedback" style="display:none; color:var(--glitch-green); margin-top:1rem; text-align:center;">TRANSMISSION_ACCEPTED</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modern Footer -->
+  <footer class="modern-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo" style="text-decoration: none; display: flex; align-items: center; gap: 0.5rem; letter-spacing: 1px; margin-bottom: 1rem;">
+            <i class="fa-solid fa-brain" style="color: var(--glitch-blue);"></i> GLITCHED<span style="color: var(--text-muted); font-weight: 400;">_CORE</span>
+          </a>
+          <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; max-width: 300px;">
+            A psychological override masquerading as a debut novel. Enter the network.
+          </p>
+        </div>
+        
+        <div class="footer-links">
+          <h4>SYSTEM_LINKS</h4>
+          <ul>
+            <li><a href="#book">Initialize</a></li>
+            <li><a href="#categories">Sectors</a></li>
+            <li><a href="#about">Log</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-social">
+          <h4>TRANSMIT</h4>
+          <div class="social-icons" style="display: flex; gap: 1rem; margin-top: 1rem;">
+            <a href="https://www.linkedin.com/in/abhishek-kumar-dutta-982b15389/" target="_blank" class="sys-btn" style="padding: 0.5rem 0.8rem; border-radius: 8px;"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/Abhishek-Commits-Hub" target="_blank" class="sys-btn" style="padding: 0.5rem 0.8rem; border-radius: 8px;"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.youtube.com/@GlitchMyNeuron" target="_blank" class="sys-btn" style="padding: 0.5rem 0.8rem; border-radius: 8px;"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 GLITCHED_CORE. ALL SYSTEMS OPERATIONAL.</p>
+      </div>
+    </div>
+  </footer>
+  </main>
+
+  <!-- Modal -->
+  <div class="modal" id="login-modal">
+    <div class="modal-content" style="text-align: center;">
+      <button class="close-btn" id="close-modal">&times;</button>
+      <!-- STEP 1: GOOGLE AUTH -->
+      <div id="auth-step-1">
+        <i class="fa-solid fa-fingerprint" style="font-size: 3rem; color: var(--glitch-blue); margin-bottom: 1rem; display: block;"></i>
+        <h2 class="sys-title" style="margin-bottom:2rem; color:var(--text-main);">SECURE_ACCESS</h2>
+        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 2rem;">Authenticate your neural connection using standard Google protocols.</p>
+        <button id="google-btn" class="sys-btn" style="width:100%; display: flex; align-items: center; justify-content: center; gap: 1rem; padding: 1rem; border-color: var(--glitch-blue);">
+          <i class="fa-brands fa-google"></i> Sign in with Google
+        </button>
+      </div>
+
+      <!-- STEP 2: ALIAS SELECTION -->
+      <div id="auth-step-2" style="display: none;">
+        <i class="fa-solid fa-user-astronaut" style="font-size: 3rem; color: var(--glitch-blue); margin-bottom: 1rem; display: block;"></i>
+        <h2 class="sys-title" style="margin-bottom:1rem; color:var(--text-main);">IDENTIFY</h2>
+        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 2rem;">Verification complete. Please select a system alias.</p>
+        <input type="text" id="alias-input" placeholder="ENTER ALIAS" style="width: 100%; padding: 0.8rem; background: rgba(0,0,0,0.5); border: 1px solid var(--border); color: var(--text-main); text-align: center; font-family: 'Space Mono', monospace; font-size: 1.2rem; margin-bottom: 1rem; text-transform: uppercase;">
+        <button id="alias-submit" class="sys-btn" style="width:100%; display: flex; align-items: center; justify-content: center; gap: 1rem; padding: 1rem; border-color: var(--glitch-blue);">
+          INITIALIZE <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+      
+      <p style="color: var(--error-color); font-size: 0.8rem; margin-top: 1.5rem; display: none;" id="firebase-error-msg">SYSTEM_WARN: FIREBASE API KEYS MISSING.</p>
+    </div>
+  </div>
+
+  <!-- Cart Drawer -->
+  <aside class="cart-drawer" id="cart-drawer">
+    <div class="cart-header">
+      <h2 class="sys-title target-glitch" style="font-size: 1.5rem;">CART_LOG</h2>
+      <button class="sys-btn" id="close-cart">&times; CLOSE</button>
+    </div>
+    <div class="cart-body">
+      <ul id="cart-items-list">
+        <!-- JS fills this -->
+      </ul>
+    </div>
+    <div class="cart-footer">
+      <h3 class="sys-title" style="margin-bottom: 1rem;">TOTAL_DUE: $<span id="cart-total">0.00</span></h3>
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=abhishekdutta.contact@gmail.com&su=Checkout%20Request&body=I%20want%20to%20complete%20my%20transaction." target="_blank" class="sys-btn" style="width: 100%; border-color: var(--glitch-blue); text-align: center; text-decoration: none; display: block;" id="checkout-btn">PROCEED_TO_PAYMENT</a>
+    </div>
+  </aside>
+
+  <button class="scroll-top" id="scroll-top">^</button>
+
+  <script src="script.js"></script>
+  <script type="module" src="firebase-auth.js"></script>
+</body>
+</html>
