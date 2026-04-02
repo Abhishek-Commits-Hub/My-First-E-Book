@@ -33,6 +33,9 @@ if (aliasSubmit) {
     openLoginBtn.innerHTML = `USER: ${alias}`;
     openLoginBtn.style.color = 'var(--glitch-blue)'; 
     
+    // Sound feedback
+    if (typeof SoundEngine !== 'undefined') SoundEngine.loginSuccess(); 
+    
     // Disable Modal & Reset
     loginModal.classList.remove('active');
     setTimeout(() => {
